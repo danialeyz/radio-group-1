@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- 
+    I used alpine js for this project's logic 
+  danial eyvazi 
+  email : danianeyvaziiii@gmail.com
+  github : danialeyz 
+ -->
+  <body
+    class="bg-gradient-to-br from-teal-300 to-teal-800 flex flex-col items-center justify-center p-0 m-0 w-screen h-screen"
+  >
+    <!-- main container -->
+    <section
+      class="w-7/12 xl:w-2/5 h-fit gap-y-5 flex flex-col items-center"
+      x-data="{ select : 1 }"
+    >
+      <!-- item 1 -->
+      <div
+        @click="select = 1"
+        :class="select === 1 ? 'p-5 w-full rounded-xl bg-slate-800 h-24 flex items-center gap-y-32 justify-between backdrop-blur-3xl text-slate-100 back ring-green-500 ring-4 bg-opacity-70':''"
+        class="p-5 bg-slate-100 w-full rounded-xl h-24 flex items-center gap-y-32 justify-between duration-500"
+      >
+        <div class="gap-6">
+          <div class="font-bold">Macbook 13 inch air</div>
+          <div>12GB/6 CPUs · 160 GB SSD disk</div>
+        </div>
+
+        <div
+          class="justify-self-end rounded-full w-8 h-8 grid place-content-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-10 sh-10 stroke-slate-50"
+            :class="select === 1 ? 'block':'hidden'"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div
+        @click="select = 2"
+        :class="select === 2 ? 'p-5 w-full rounded-xl bg-slate-800 h-24 flex items-center gap-y-32 justify-between backdrop-blur-3xl text-slate-100 back ring-green-500 ring-4 bg-opacity-70':''"
+        class="p-5 bg-slate-100 w-full rounded-xl h-24 flex items-center gap-y-32 justify-between duration-500"
+      >
+        <div class="gap-6">
+          <div class="font-bold">Macbook 13 inch pro</div>
+          <div>16GB/8 CPUs · 512 GB SSD disk</div>
+        </div>
+
+        <div
+          class="justify-self-end rounded-full w-8 h-8 grid place-content-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-10 sh-10 stroke-slate-50"
+            :class="select === 2 ? 'block':'hidden'"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- item 3 -->
+      <div
+        @click="select = 3"
+        :class="select === 3 ? 'p-5 w-full rounded-xl bg-slate-800 h-24 flex items-center gap-y-32 justify-between backdrop-blur-3xl text-slate-100 back ring-green-500 ring-4 bg-opacity-70':''"
+        class="p-5 bg-slate-100 w-full rounded-xl h-24 flex items-center gap-y-32 justify-between duration-500"
+      >
+        <div class="gap-6">
+          <div class="font-bold">Macbook 14 inch pro max</div>
+          <div>32GB/12 CPUs · 1024 GB SSD disk</div>
+        </div>
+
+        <div
+          class="justify-self-end rounded-full w-8 h-8 grid place-content-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-10 sh-10 stroke-slate-50"
+            :class="select === 3 ? 'block':'hidden'"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- item 4 -->
+      <div
+        @click="select = 4"
+        :class="select === 4 ? 'p-5 w-full rounded-xl bg-slate-800 h-24 flex items-center gap-y-32 justify-between backdrop-blur-3xl text-slate-100 back ring-green-500 ring-4 bg-opacity-70':''"
+        class="p-5 bg-slate-100 w-full rounded-xl h-24 flex items-center gap-y-32 justify-between duration-500"
+      >
+        <div class="gap-6">
+          <div class="font-bold">Macbook 17 inch pro ultra</div>
+          <div>64GB/24 CPUs · 2048 GB SSD disk</div>
+        </div>
+
+        <div
+          class="justify-self-end rounded-full w-8 h-8 grid place-content-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-10 sh-10 stroke-slate-50"
+            :class="select === 4 ? 'block':'hidden'"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- alpinejs -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </body>
+</html>
